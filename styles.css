@@ -1,0 +1,86 @@
+@import url(css/sidebar.css);
+@import url(css/form.css);
+
+:root {
+    --backgound-color: #00090E;
+    --text-color: #E1E1E1;
+    --primary-color: #81F388;
+    --secundary-color: #888888;
+    --tag-color: #171D1F;
+    --font-family: "Prompt", sans-serif;
+    --itens-background: #171D1F;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--backgound-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    height: 100vh;
+    gap: 27px;
+    padding: 56px 0;
+}
+
+main {
+    background-color: var(--itens-background);
+    border-radius: 10px;
+    padding: 32px;
+    display: flex;
+    gap: 24px;
+}
+
+.main-image {
+    border-radius: 8px;
+    height: 100%;
+}
+
+.container-imagem {
+    height: 368px;
+    padding: 24px 16px;
+}
+
+.container-upload-imagem button {
+    margin: 16px 0 8px 0;
+    background-color: var(--itens-background);
+    color: var(--secundary-color);
+    border: 1px solid var(--secundary-color);
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    position: relative;
+}
+
+.container-upload-imagem button::after {
+    content: "";
+    background-image: url("./img/upload.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 8px;
+}
+
+.container-imagem-nome {
+    display: flex;
+    gap: 8px;
+    color: var(--secundary-color);
+    font-size: 15px;
+}
